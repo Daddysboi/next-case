@@ -11,7 +11,7 @@ const Logo = ({
                 variant = 'default',
                 borderColor = 'currentColor',
                 iconColor = 'currentColor',
-                textColor,
+                textColor = 'currentColor',
               }: LogoProps) => {
   const isTransparent = variant === 'transparent';
 

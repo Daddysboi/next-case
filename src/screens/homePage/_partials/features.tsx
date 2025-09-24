@@ -3,8 +3,8 @@ const FeaturesSection = () => {
     <section id="features" className="py-20 px-4 bg-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose NextCase</h2>
-          <p className="text-xl text-gray-600">Powerful features designed for justice and transparency</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Try NextCase</h2>
+          <p className="text-xl text-gray-600">Track Record with powerful features designed to help you fight back</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

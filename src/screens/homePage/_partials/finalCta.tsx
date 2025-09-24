@@ -11,11 +11,11 @@ const FinalCtaSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/complaint"
-            className="bg-black text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all hover:scale-105"
+            className="bg-black text-white px-8 py-4  font-semibold text-lg hover:shadow-xl transition-all hover:scale-105"
           >
             Start Your Complaint Now
           </Link>
-          <button className="border-2 border-black text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition-colors">
+          <button className="border-2 border-black text-black px-8 py-4  font-semibold text-lg hover:bg-white/10 transition-colors">
             Contact Our Team
           </button>
         </div>
