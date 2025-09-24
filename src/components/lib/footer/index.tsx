@@ -27,13 +27,13 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms and Conditions</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold mb-4">Connect With Us</h3>
-            <p className="text-gray-400 mb-4">Join our mission for justice and transparency</p>
+            <p className="text-gray-400 mb-4">Join our mission for justice</p>
             <div className="flex space-x-4">
               {['Twitter', 'Facebook', 'Instagram', 'LinkedIn'].map((social) => (
                 <a key={social} href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 NextCase. All rights reserved. Standing with victims, fighting for justice worldwide.</p>
+          <p>&copy; 2024 NextCase. All rights reserved. Standing with victims, fighting for justice.</p>
         </div>
       </div>
     </footer>

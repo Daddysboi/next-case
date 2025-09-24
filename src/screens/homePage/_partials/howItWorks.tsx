@@ -12,7 +12,7 @@ const HowItWorksSection = () => {
             { step: "03", title: "Resolve", desc: "Get justice with community support", icon: "⚖️" },
           ].map((item) => (
             <div key={item.step} className="text-center p-6">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+              <div className="w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
                 {item.icon}
               </div>
               <div className="text-2xl font-bold text-gray-900 mb-2">{item.title}</div>
