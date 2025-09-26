@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import MainLayout from '@/components/lib/MainLayout';
 import { blacklistedVendors, BlacklistedVendor } from '@/data/blacklisted-vendors';
-import { AppTable } from '@/components/ui/AppTable';
-import { TableColumn } from '@/types/app-table';
+import { AppTable } from '@/components/ui/AppTable/_partials';
+import { TableColumn } from '@/components/ui/AppTable/_partials/types/app-table';
 
 const BlacklistedVendorsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);

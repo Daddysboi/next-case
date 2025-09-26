@@ -1,6 +1,6 @@
 import React from 'react';
-import { TableColumn } from '@/types/app-table';
-import AppTableRow from './TableRow';
+import { TableColumn } from '@/components/ui/AppTable/_partials/types/app-table';
+import TableRow from './TableRow';
 import TableLoadingState from './TableLoadingState';
 import TableEmptyState from './TableEmptyState';
 
@@ -20,7 +20,7 @@ const TableBody = <T extends { id: string | number }>({ columns, data, loading, 
         <TableLoadingState />
       ) : data.length > 0 ? (
         data.map((item, rowIndex) => (
-          <AppTableRow
+          <TableRow
             key={item.id}
             item={item}
             rowIndex={rowIndex}

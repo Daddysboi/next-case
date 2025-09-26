@@ -1,5 +1,5 @@
 import React from 'react';
-import { TableColumn } from '../../../../types/app-table';
+import { TableColumn } from '@/components/ui/AppTable/_partials/types/app-table';
 
 interface TableRowProps<T> {
   item: T;

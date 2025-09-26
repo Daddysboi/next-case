@@ -1,6 +1,6 @@
 import React from 'react';
 import Pagination from '../../Pagination';
-import { AppTablePaginationProps } from '../../../../types/app-table';
+import { AppTablePaginationProps } from '@/components/ui/AppTable/_partials/types/app-table';
 
 const TablePagination: React.FC<AppTablePaginationProps> = ({
   currentPage,

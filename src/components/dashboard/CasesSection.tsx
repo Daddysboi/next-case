@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { Eye, Edit, Trash2 } from 'lucide-react';
-import { AppTable } from '@/components/ui/AppTable';
-import { TableColumn } from '@/types/app-table';
+import { AppTable } from '@/components/ui/AppTable/_partials';
+import { TableColumn } from '@/components/ui/AppTable/_partials/types/app-table';
 
 interface Case {
   id: string;
@@ -140,17 +140,18 @@ const columns: TableColumn<Case>[] = [
   },
   {
     key: 'actions',
-    header: '',
-    colSpanClasses: 'col-span-12 md:col-span-1 text-right',
+    header: 'Actions',
+    colSpanClasses: 'col-span-2 md:col-span-2', // Removed text-right
+    headerClassName: 'text-right', // Added explicit right alignment for header
     render: (item) => (
-      <div className="flex items-center justify-end space-x-2">
-        <button aria-label={`View ${item.id}`} className="p-2 rounded-md hover:bg-gray-100">
+      <div className="flex items-center justify-end">
+        <button aria-label={`View ${item.id}`} className="p-1 rounded-md hover:bg-gray-100">
           <Eye className="w-4 h-4 text-gray-600" />
         </button>
-        <button aria-label={`Edit ${item.id}`} className="p-2 rounded-md hover:bg-gray-100">
+        <button aria-label={`Edit ${item.id}`} className="p-1 rounded-md hover:bg-gray-100 ml-0.5">
           <Edit className="w-4 h-4 text-gray-600" />
         </button>
-        <button aria-label={`Delete ${item.id}`} className="p-2 rounded-md hover:bg-gray-100">
+        <button aria-label={`Delete ${item.id}`} className="p-1 rounded-md hover:bg-gray-100 ml-0.5">
           <Trash2 className="w-4 h-4 text-red-600" />
         </button>
       </div>

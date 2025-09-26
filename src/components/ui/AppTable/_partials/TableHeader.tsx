@@ -1,5 +1,5 @@
 import React from 'react';
-import { TableColumn } from '@/types/app-table';
+import { TableColumn } from '@/components/ui/AppTable/_partials/types/app-table';
 
 interface TableHeaderProps<T> {
   columns: TableColumn<T>[];
@@ -13,7 +13,7 @@ const TableHeader = <T,>({ columns, rowGridClasses, renderRowActions }: TableHea
       <div className={`${rowGridClasses} px-6 py-4 bg-gray-50`}>
         {columns.map((column) => (
           <div key={column.key} className={`${column.headerClassName || column.className || ''} ${column.colSpanClasses || 'col-span-full'}`}>
-            <span className="text-xs font-semibold text-gray-600 uppercase tracking-wider">
+            <span className={`text-xs font-semibold text-gray-600 uppercase tracking-wider ${column.headerClassName?.includes('text-right') ? 'text-right' : ''}`}>
               {column.header}
             </span>
           </div>

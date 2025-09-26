@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import TableHeader from './TableHeader';
-import TableBody from './TableBody';
-import TablePagination from './TablePagination';
-import { TableColumn, AppTableProps } from '../../../types/app-table';
+import TableHeader from './_partials/TableHeader';
+import TableBody from './_partials/TableBody';
+import TablePagination from './_partials/TablePagination';
+import { TableColumn, AppTableProps } from '@/components/ui/AppTable/_partials/types/app-table';
 
 const AppTable = <T extends { id: string | number }>({
   columns,
