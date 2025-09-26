@@ -67,6 +67,27 @@ const Modal: React.FC<ModalProps> = ({
       <div className={`relative bg-white rounded-lg shadow-lg border border-gray-200 ${modalWidthClass} w-full transform transition-all duration-300 ${
         isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
       }`}>
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors z-10"
+          aria-label="Close modal"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
         {/* Header */}
         {/* Header */}
         {title && (

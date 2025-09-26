@@ -1,0 +1,1 @@
+export default function CaseLayout({  children,  evidence,}: {  children: React.ReactNode;  evidence: React.ReactNode;}) {  return (    <>      {children}      {evidence}    </>  );}

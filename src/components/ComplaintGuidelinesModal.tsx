@@ -16,7 +16,7 @@ const ComplaintGuidelinesModal: React.FC<ComplaintGuidelinesModalProps> = ({ isO
           <span className="text-2xl">🎯</span>
           <div>
             <h4 className="font-semibold text-gray-900">Be Specific & Clear</h4>
-            <p className="text-sm text-gray-600">State exactly what resolution you want</p>
+            <p className="text-sm text-gray-600">State exactly the issue and what resolution you want</p>
           </div>
         </div>
 

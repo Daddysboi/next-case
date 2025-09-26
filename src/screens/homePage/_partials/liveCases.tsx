@@ -6,6 +6,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 
 const LiveCasesSection = () => {
   const cases = [
@@ -79,7 +80,7 @@ const LiveCasesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+    <section id="cases" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -100,18 +101,21 @@ const LiveCasesSection = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Active Cases</h3>
                 <p className="text-gray-600 mt-1">Live updates and progress tracking</p>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-gray-500">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
-                  <span>Active</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>
-                  <span>Review</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                  <span>Resolved</span>
+              <div className="flex flex-row sm:flex-col justify-between items-start sm:items-end gap-2">
+                <Link href="/cases" className="text-blue-500 underline cursor-pointer text-sm">View More</Link>
+                <div className="flex items-center space-x-2 text-sm text-gray-500">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                    <span>Active</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>
+                    <span>Review</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                    <span>Resolved</span>
+                  </div>
                 </div>
               </div>
             </div>

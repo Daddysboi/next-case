@@ -6,7 +6,7 @@ const FinalCtaSection = () => {
       <div className="container mx-auto max-w-4xl text-center">
         <h2 className="text-4xl font-bold mb-4">Ready to Get Justice?</h2>
         <p className="text-xl mb-8 opacity-90">
-          Join thousands of people who have successfully recovered their funds and found closure through our platform.
+          Join hundreds of people who have successfully recovered their funds and found closure through us
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
@@ -19,7 +19,7 @@ const FinalCtaSection = () => {
             Contact Our Team
           </button>
         </div>
-        <p className="mt-4 text-black">No registration required • 100% Free • Start immediately</p>
+        <p className="mt-4 text-black">No registration required • 100% Free</p>
       </div>
     </section>
   );

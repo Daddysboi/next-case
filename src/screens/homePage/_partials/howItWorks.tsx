@@ -1,6 +1,6 @@
 const HowItWorksSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="how-it-works" className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -14,8 +14,6 @@ const HowItWorksSection = () => {
 
         {/* Steps */}
         <div className="relative">
-          {/* Connecting Line */}
-          <div className="hidden md:block absolute top-24 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-yellow-200 to-orange-400"></div>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             {[
